@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="300" viewBox="0 0 860 300">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#bc8cff"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="10" y="10" width="840" height="280" rx="16" fill="url(#card)" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- 头部：图标 + 名称 -->
+  <text x="45" y="75" font-size="34">🤖</text>
+  <text x="95" y="70" font-family="'Courier New',monospace" font-size="26" font-weight="bold" fill="#e6edf3">ros2-agent-workflow</text>
+  <text x="95" y="95" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="16" fill="#8b949e">Agent 控制 ROS2 机器人 · MCP 桥接 · Fail-Closed 安全网关</text>
+
+  <!-- 右上标签 -->
+  <rect x="620" y="45" width="200" height="36" rx="18" fill="#1f6feb" opacity="0.15" stroke="#58a6ff" stroke-width="1"/>
+  <text x="720" y="68" font-family="'Courier New',monospace" font-size="16" font-weight="bold" fill="#58a6ff" text-anchor="middle">★ 主打作品</text>
+
+  <!-- 数据卡片行 -->
+  <g>
+    <!-- 322 tests -->
+    <rect x="45" y="130" width="180" height="80" rx="12" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+    <text x="135" y="165" font-family="'Courier New',monospace" font-size="30" font-weight="bold" fill="#3fb950" text-anchor="middle">322</text>
+    <text x="135" y="192" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">tests passed</text>
+
+    <!-- 49.6s -->
+    <rect x="245" y="130" width="180" height="80" rx="12" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+    <text x="335" y="165" font-family="'Courier New',monospace" font-size="30" font-weight="bold" fill="#79c0ff" text-anchor="middle">49.6s</text>
+    <text x="335" y="192" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">三段配送实跑</text>
+
+    <!-- 0.35m -->
+    <rect x="445" y="130" width="180" height="80" rx="12" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+    <text x="535" y="165" font-family="'Courier New',monospace" font-size="30" font-weight="bold" fill="#bc8cff" text-anchor="middle">≤0.35m</text>
+    <text x="535" y="192" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">端点误差</text>
+
+    <!-- 0 碰撞 -->
+    <rect x="645" y="130" width="180" height="80" rx="12" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+    <text x="735" y="165" font-family="'Courier New',monospace" font-size="30" font-weight="bold" fill="#3fb950" text-anchor="middle">0</text>
+    <text x="735" y="192" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" fill="#8b949e" text-anchor="middle">碰撞 · 证据防伪造</text>
+  </g>
+
+  <!-- 底部语言条 -->
+  <text x="45" y="252" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#8b949e">Python</text>
+  <rect x="110" y="240" width="700" height="8" rx="4" fill="#21262d"/>
+  <rect x="110" y="240" width="700" height="8" rx="4" fill="url(#bar)">
+    <animate attributeName="width" values="0;700;700" dur="2s" fill="freeze"/>
+  </rect>
+  <text x="830" y="252" font-family="'Courier New',monospace" font-size="13" fill="#8b949e" text-anchor="end">100%</text>
+</svg>

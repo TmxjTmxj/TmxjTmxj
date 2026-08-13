@@ -41,12 +41,14 @@ Agent 控制 ROS2 机器人 → 让 Agent 进车间
 
 ## 🚀 主打作品
 
-### 🤖 [ros2-agent-workflow](https://github.com/TmxjTmxj/ros2-agent-workflow)
-**Agent 控制 ROS2 机器人** — MCP 桥接 + Fail-Closed 安全网关 + 可验证证据，以智能车国赛·医院配送为完整案例。
-`322 tests ✅` `实测 49.6s` `端点误差 ≤0.35m`
+<div align="center">
+
+<a href="https://github.com/TmxjTmxj/ros2-agent-workflow"><img src="assets/ros2-card.svg" width="90%" alt="ros2-agent-workflow 数据卡"/></a>
+
+</div>
 
 ### 🏭 [cnc-cam-gcode-simulator](https://github.com/TmxjTmxj/cnc-cam-gcode-simulator)
-**CNC CAM 与 G 代码仿真软件** — DXF → CAM 刀路 → Fanuc G 代码 → 2D/3D 仿真，车铣双模式。
+**CNC CAM 与 G 代码仿真软件** — DXF 导入 → CAM 刀路 → Fanuc G 代码 → 2D/3D 仿真，车铣双模式独立桌面软件。
 `44 tests ✅` `4000+ 行`
 
 ### 💉 [microneedle-skin-pullout](https://github.com/TmxjTmxj/microneedle-skin-pullout)
