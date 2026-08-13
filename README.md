@@ -31,19 +31,11 @@ Agent 控制 ROS2 机器人 → 让 Agent 进车间
 
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=TmxjTmxj.TmxjTmxj" alt="visitors"/>
-  <img src="https://img.shields.io/github/followers/TmxjTmxj?style=flat&label=Followers&color=2ea44f"/>
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FTmxjTmxj&query=public_repos&style=flat-square&label=Repositories&color=2ea44f"/>
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FTmxjTmxj&query=followers&style=flat-square&label=Followers&color=2ea44f"/>
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FTmxjTmxj&query=public_gists&style=flat-square&label=Gists&color=2ea44f"/>
+  <img src="https://img.shields.io/badge/Projects-17+-FF6F00?style=flat-square"/>
 </p>
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=TmxjTmxj&show_icons=true&theme=radical&hide_border=true&count_private=true&locale=cn" width="420"/>
-    </td>
-    <td align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TmxjTmxj&layout=compact&theme=radical&hide_border=true&locale=cn" width="340"/>
-    </td>
-  </tr>
-</table>
 
 ---
 
