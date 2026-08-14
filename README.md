@@ -77,7 +77,7 @@ Agent 控制 ROS2 机器人 → 让 Agent 进车间
 |---|---|---|
 | [ansys-mech-sim-cases](https://github.com/TmxjTmxj/ansys-mech-sim-cases) | 涡轮叶片/轴承/缸筒 | 26 张仿真图 + 工程报告 |
 | [shrapnel-force-predictor](https://github.com/TmxjTmxj/shrapnel-force-predictor) | 弹片力值预测 | 7 种 ML 回归，误差 3.72% |
-| [beifeng-wind-agent](https://github.com/TmxjTmxj/beifeng-wind-agent) | 风电运维 RAG Agent | 评测准确率 91.4% |
+| [beifeng-wind-agent](https://github.com/TmxjTmxj/beifeng-wind-agent) | 风电运维 RAG Agent | 评测得分率 99.3%（604/608） |
 | [G-code-simulation](https://github.com/TmxjTmxj/G-code-simulation) | G 代码仿真（早期） | 第一版 |
 
 ## 🎮 彩蛋
