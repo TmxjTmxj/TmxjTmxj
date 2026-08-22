@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="260" viewBox="0 0 380 260" role="img" aria-label="microneedle-skin-pullout 演示">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111a30"/>
+      <stop offset="100%" stop-color="#0a1120"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0abfc"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+  <rect width="380" height="260" rx="16" fill="url(#card)" stroke="#2a3a5e" stroke-width="1.5"/>
+  <circle cx="60" cy="60" r="70" fill="#f0abfc" opacity="0.06" filter="url(#glow)"/>
+
+  <!-- header -->
+  <text x="20" y="34" font-size="15" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-weight="700" fill="#e6edf3">💉 microneedle-skin</text>
+  <rect x="300" y="18" width="64" height="22" rx="11" fill="#1f2540" stroke="#60a5fa" stroke-width="1"/>
+  <text x="332" y="33" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="11" fill="#7dd3fc" text-anchor="middle">DEMO</text>
+
+  <!-- chart axes -->
+  <line x1="52" y1="196" x2="352" y2="196" stroke="#2a3a5e" stroke-width="1.5"/>
+  <line x1="52" y1="196" x2="52" y2="70" stroke="#2a3a5e" stroke-width="1.5"/>
+  <g stroke="#1b2740" stroke-width="1">
+    <line x1="52" y1="150" x2="352" y2="150"/>
+    <line x1="52" y1="110" x2="352" y2="110"/>
+    <line x1="130" y1="196" x2="130" y2="70"/>
+    <line x1="210" y1="196" x2="210" y2="70"/>
+    <line x1="290" y1="196" x2="290" y2="70"/>
+  </g>
+  <text x="52" y="214" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="10" fill="#8b98ac">位移</text>
+  <text x="30" y="100" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="10" fill="#8b98ac">力</text>
+
+  <!-- force-displacement curve -->
+  <path d="M52,196 C80,192 110,180 140,150 C170,120 190,92 210,86 C230,80 250,88 262,110 C274,132 282,160 292,180 C300,194 320,196 352,196" fill="none" stroke="url(#bar)" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="340" stroke-dashoffset="340">
+    <animate attributeName="stroke-dashoffset" values="340;0" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+  <!-- peak marker 0.18N -->
+  <g>
+    <circle cx="210" cy="86" r="5" fill="#f0abfc"/>
+    <circle cx="210" cy="86" r="12" fill="none" stroke="#f0abfc" stroke-width="1.2" opacity="0">
+      <animate attributeName="r" values="8;20" dur="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="230" y="78" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#f0abfc">峰值 0.18N</text>
+  </g>
+
+  <text x="20" y="246" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b98ac">Abaqus/Explicit · MCP 自动化 · 发明专利</text>
+</svg>

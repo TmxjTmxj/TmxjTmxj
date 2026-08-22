@@ -12,20 +12,20 @@
 
 ---
 
+## 🧭 我在做什么
+
 <div align="center">
+  <img src="assets/pillars.svg" width="100%" alt="三大方向"/>
+</div>
 
-```bash
-$ whoami
-山东大学机械 · AI Agent × 智能工厂 × 具身智能
+---
 
-$ cat ~/philosophy
-代码是 Agent 写的。
-需求、判断、迭代、验收，是我的。
+## 🎬 项目演示
 
-$ ./roadmap --next
-Agent 控制 ROS2 机器人 → 让 Agent 进车间
-```
-
+<div align="center">
+  <a href="https://github.com/TmxjTmxj/ros2-agent-workflow"><img src="assets/demo-ros2.svg" width="32%" alt="ros2-agent-workflow 演示"/></a>
+  <a href="https://github.com/TmxjTmxj/cnc-cam-gcode-simulator"><img src="assets/demo-cnc.svg" width="32%" alt="cnc-cam-gcode-simulator 演示"/></a>
+  <a href="https://github.com/TmxjTmxj/microneedle-skin-pullout"><img src="assets/demo-microneedle.svg" width="32%" alt="microneedle-skin-pullout 演示"/></a>
 </div>
 
 ---

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="300" viewBox="0 0 1140 300" role="img" aria-label="天漠雪佳 —— 三大方向">
+  <defs>
+    <linearGradient id="strap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1526"/>
+      <stop offset="100%" stop-color="#0a1120"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="55%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <rect x="10" y="10" width="1120" height="280" rx="18" fill="url(#strap)" stroke="#2a3a5e" stroke-width="1.5"/>
+  <rect x="10" y="10" width="1120" height="280" rx="18" fill="none" stroke="url(#acc)" stroke-width="1" opacity="0.2"/>
+
+  <!-- vertical dividers -->
+  <line x1="390" y1="52" x2="390" y2="248" stroke="#1b2740" stroke-width="1"/>
+  <line x1="760" y1="52" x2="760" y2="248" stroke="#1b2740" stroke-width="1"/>
+
+  <!-- ================= COLUMN 1: 多 Agent 编排 ================= -->
+  <g>
+    <!-- icon: connected agent nodes -->
+    <g transform="translate(190,86)">
+      <circle cx="0" cy="24" r="9" fill="#0b1226" stroke="#22d3ee" stroke-width="1.6"/>
+      <circle cx="-30" cy="-12" r="6" fill="#0b1226" stroke="#60a5fa" stroke-width="1.4"/>
+      <circle cx="30" cy="-12" r="6" fill="#0b1226" stroke="#a855f7" stroke-width="1.4"/>
+      <circle cx="-22" cy="34" r="5.5" fill="#0b1226" stroke="#f0abfc" stroke-width="1.3"/>
+      <circle cx="22" cy="34" r="5.5" fill="#0b1226" stroke="#3fb950" stroke-width="1.3"/>
+      <line x1="-27" y1="-9" x2="-5" y2="17" stroke="#33456b" stroke-width="1.2"/>
+      <line x1="27" y1="-9" x2="5" y2="17" stroke="#33456b" stroke-width="1.2"/>
+      <line x1="-20" y1="31" x2="-3" y2="26" stroke="#33456b" stroke-width="1.2"/>
+      <line x1="20" y1="31" x2="3" y2="26" stroke="#33456b" stroke-width="1.2"/>
+      <!-- moving token -->
+      <circle r="3" fill="#22d3ee">
+        <animateMotion dur="2.4s" repeatCount="indefinite" path="M0,24 L-30,-12 L30,-12 Z"/>
+      </circle>
+      <circle cx="0" cy="24" r="13" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0">
+        <animate attributeName="r" values="13;26" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <text x="190" y="150" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="21" font-weight="700" fill="#e6edf3" text-anchor="middle">多 Agent 编排</text>
+    <text x="190" y="176" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13.5" fill="#8b98ac" text-anchor="middle">plan → delegate → execute，失败隔离</text>
+    <rect x="130" y="196" width="120" height="26" rx="13" fill="#111a30" stroke="#233152" stroke-width="1"/>
+    <text x="190" y="214" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="12" fill="#7dd3fc" text-anchor="middle">orchestrator</text>
+  </g>
+
+  <!-- ================= COLUMN 2: ROS2 机器人 ================= -->
+  <g>
+    <!-- icon: robot + MCP link -->
+    <g transform="translate(570,88)">
+      <rect x="-26" y="-24" width="52" height="40" rx="8" fill="#0b1226" stroke="#60a5fa" stroke-width="1.6"/>
+      <circle cx="-10" cy="-8" r="4.5" fill="#22d3ee"/>
+      <circle cx="10" cy="-8" r="4.5" fill="#a855f7"/>
+      <rect x="-3" y="16" width="6" height="14" rx="3" fill="#0b1226" stroke="#60a5fa" stroke-width="1.2"/>
+      <line x1="0" y1="0" x2="0" y2="-38" stroke="#60a5fa" stroke-width="1.2"/>
+      <circle cx="0" cy="-42" r="5" fill="#f0abfc">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="-30" y="30" width="60" height="3" rx="1.5" fill="#22d3ee"/>
+      <circle cx="0" cy="31.5" r="3.5" fill="#a855f7">
+        <animate attributeName="cx" values="-26;26;-26" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <text x="570" y="150" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="21" font-weight="700" fill="#e6edf3" text-anchor="middle">ROS2 机器人控制</text>
+    <text x="570" y="176" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13.5" fill="#8b98ac" text-anchor="middle">MCP 桥接 · Gazebo 仿真 · 安全网关</text>
+    <rect x="510" y="196" width="120" height="26" rx="13" fill="#111a30" stroke="#233152" stroke-width="1"/>
+    <text x="570" y="214" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="12" fill="#a78bfa" text-anchor="middle">MCP + ROS2</text>
+  </g>
+
+  <!-- ================= COLUMN 3: 工业软件 ================= -->
+  <g>
+    <!-- icon: rotating gear + drawn curve -->
+    <g transform="translate(950,88)">
+      <g>
+        <g stroke="#60a5fa" stroke-width="5" stroke-linecap="round">
+          <line x1="0" y1="-22" x2="0" y2="-9"/>
+          <line x1="0" y1="9" x2="0" y2="22"/>
+          <line x1="-22" y1="0" x2="-9" y2="0"/>
+          <line x1="9" y1="0" x2="22" y2="0"/>
+          <line x1="-15.5" y1="-15.5" x2="-6.5" y2="-6.5"/>
+          <line x1="6.5" y1="6.5" x2="15.5" y2="15.5"/>
+          <line x1="-15.5" y1="15.5" x2="-6.5" y2="6.5"/>
+          <line x1="6.5" y1="-6.5" x2="15.5" y2="-15.5"/>
+        </g>
+        <circle r="16" fill="#0b1226" stroke="#a855f7" stroke-width="1.6"/>
+        <circle r="4" fill="#22d3ee"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+      </g>
+      <!-- curve being drawn -->
+      <path d="M44,40 L58,28 L70,34 L84,12 L96,22 L112,-6" fill="none" stroke="#f0abfc" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="120" stroke-dashoffset="120">
+        <animate attributeName="stroke-dashoffset" values="120;0" dur="3s" repeatCount="indefinite"/>
+      </path>
+      <circle cx="112" cy="-6" r="3" fill="#3fb950"/>
+    </g>
+    <text x="950" y="150" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="21" font-weight="700" fill="#e6edf3" text-anchor="middle">工业软件与仿真</text>
+    <text x="950" y="176" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13.5" fill="#8b98ac" text-anchor="middle">CAD / CAE / CAM 自动化 · 有限元</text>
+    <rect x="890" y="196" width="120" height="26" rx="13" fill="#111a30" stroke="#233152" stroke-width="1"/>
+    <text x="950" y="214" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="12" fill="#f0abfc" text-anchor="middle">CAD · CAE · CAM</text>
+  </g>
+</svg>
