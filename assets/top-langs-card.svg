@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" role="img" aria-label="TmxjTmxj 常用语言分布">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111a30"/>
+      <stop offset="100%" stop-color="#0a1120"/>
+    </linearGradient>
+    <linearGradient id="barAll" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="55%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect x="10" y="10" width="700" height="280" rx="18" fill="url(#card)" stroke="#2a3a5e" stroke-width="1.5"/>
+  <rect x="10" y="10" width="700" height="280" rx="18" fill="none" stroke="url(#barAll)" stroke-width="1" opacity="0.25"/>
+  <circle cx="100" cy="60" r="90" fill="#22d3ee" opacity="0.06" filter="url(#blur)"/>
+
+  <!-- header -->
+  <text x="40" y="58" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="16" font-weight="700" letter-spacing="1.5" fill="#e6edf3">TOP LANGUAGES</text>
+  <text x="680" y="58" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="13" fill="#5b6b85" text-anchor="end">13 repos · 按主语言</text>
+  <rect x="40" y="72" width="640" height="1.5" fill="#1b2740"/>
+
+  <!-- Python -->
+  <text x="40" y="126" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="15" font-weight="600" fill="#e6edf3">Python</text>
+  <rect x="220" y="112" width="400" height="14" rx="7" fill="#1a2540"/>
+  <rect x="220" y="112" width="300" height="14" rx="7" fill="#3b82f6">
+    <animate attributeName="width" values="0;300;300" dur="1.2s" fill="freeze"/>
+  </rect>
+  <text x="680" y="126" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="14" fill="#7dd3fc" text-anchor="end">54%</text>
+
+  <!-- Rust -->
+  <text x="40" y="170" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="15" font-weight="600" fill="#e6edf3">Rust</text>
+  <rect x="220" y="156" width="400" height="14" rx="7" fill="#1a2540"/>
+  <rect x="220" y="156" width="150" height="14" rx="7" fill="#dea584">
+    <animate attributeName="width" values="0;150;150" dur="1.2s" fill="freeze"/>
+  </rect>
+  <text x="680" y="170" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="14" fill="#a78bfa" text-anchor="end">15%</text>
+
+  <!-- TypeScript -->
+  <text x="40" y="214" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="15" font-weight="600" fill="#e6edf3">TypeScript</text>
+  <rect x="220" y="200" width="400" height="14" rx="7" fill="#1a2540"/>
+  <rect x="220" y="200" width="150" height="14" rx="7" fill="#3178c6">
+    <animate attributeName="width" values="0;150;150" dur="1.2s" fill="freeze"/>
+  </rect>
+  <text x="680" y="214" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="14" fill="#7dd3fc" text-anchor="end">15%</text>
+
+  <!-- JavaScript -->
+  <text x="40" y="258" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="15" font-weight="600" fill="#e6edf3">JavaScript</text>
+  <rect x="220" y="244" width="400" height="14" rx="7" fill="#1a2540"/>
+  <rect x="220" y="244" width="80" height="14" rx="7" fill="#f1e05a">
+    <animate attributeName="width" values="0;80;80" dur="1.2s" fill="freeze"/>
+  </rect>
+  <text x="680" y="258" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="14" fill="#f0abfc" text-anchor="end">8%</text>
+</svg>

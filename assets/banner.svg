@@ -1,103 +1,206 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="TMXJ · 天漠雪佳 — AI Agent Engineer">
   <defs>
+    <!-- Deep-space base -->
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="55%" stop-color="#0f1620"/>
-      <stop offset="100%" stop-color="#131b2a"/>
+      <stop offset="0%" stop-color="#04060e"/>
+      <stop offset="52%" stop-color="#080e1c"/>
+      <stop offset="100%" stop-color="#0e1630"/>
     </linearGradient>
-    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#58a6ff"/>
-      <stop offset="45%" stop-color="#79c0ff"/>
-      <stop offset="100%" stop-color="#bc8cff"/>
+
+    <!-- Nebula glows -->
+    <radialGradient id="nebCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#0ea5e9" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.5"/>
+      <stop offset="55%" stop-color="#7c3aed" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1f6feb" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#1d4ed8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Title gradient: blue -> violet -> pink -->
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0.2">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="42%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f0abfc"/>
     </linearGradient>
-    <linearGradient id="glowBlue" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1f6feb" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#1f6feb" stop-opacity="0"/>
+
+    <!-- Accent line / progress -->
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#a855f7"/>
     </linearGradient>
-    <linearGradient id="glowPurple" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#bc8cff" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#bc8cff" stop-opacity="0"/>
+
+    <!-- Central node ring gradient -->
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="55%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#a855f7"/>
     </linearGradient>
-    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6"/>
-    </filter>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#21262d" stroke-width="0.5" opacity="0.4"/>
+
+    <!-- Faint blueprint grid -->
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#1b2740" stroke-width="0.5" opacity="0.5"/>
     </pattern>
+
+    <!-- Gaussian blur for nebula -->
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="34"/>
+    </filter>
+    <filter id="blurSoft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
   </defs>
 
-  <rect width="1200" height="400" fill="url(#bg)"/>
-  <rect width="1200" height="400" fill="url(#grid)"/>
+  <!-- ================= BACKGROUND ================= -->
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <rect width="1200" height="420" fill="url(#grid)"/>
 
-  <!-- 光晕 -->
-  <circle cx="960" cy="80" r="240" fill="url(#glowBlue)" filter="url(#blur)"/>
-  <circle cx="1080" cy="320" r="200" fill="url(#glowPurple)" filter="url(#blur)"/>
+  <!-- Nebulae -->
+  <ellipse cx="210" cy="40" rx="300" ry="200" fill="url(#nebCyan)" filter="url(#blur)"/>
+  <ellipse cx="1050" cy="140" rx="280" ry="230" fill="url(#nebViolet)" filter="url(#blur)"/>
+  <ellipse cx="640" cy="430" rx="420" ry="220" fill="url(#nebBlue)" filter="url(#blur)"/>
 
-  <!-- Agent 节点网络（右侧） -->
+  <!-- Starfield -->
+  <g fill="#cbd5ff">
+    <circle cx="60" cy="60" r="1.4" opacity="0.9"/>
+    <circle cx="150" cy="330" r="1.2" opacity="0.7"/>
+    <circle cx="300" cy="90" r="1.0" opacity="0.6"/>
+    <circle cx="420" cy="260" r="1.4" opacity="0.8"/>
+    <circle cx="560" cy="40" r="1.1" opacity="0.6"/>
+    <circle cx="660" cy="120" r="1.5" opacity="0.9"/>
+    <circle cx="1180" cy="360" r="1.3" opacity="0.7"/>
+    <circle cx="520" cy="370" r="1.0" opacity="0.5"/>
+    <circle cx="780" cy="30" r="1.2" opacity="0.6"/>
+    <circle cx="900" cy="390" r="1.3" opacity="0.6"/>
+    <circle cx="1140" cy="60" r="1.1" opacity="0.5"/>
+    <circle cx="80" cy="250" r="1.0" opacity="0.5"/>
+  </g>
+
+  <!-- ================= BRAND COLUMN ================= -->
   <g>
-    <!-- 中心大节点 -->
-    <circle cx="880" cy="190" r="46" fill="#0d1117" stroke="#58a6ff" stroke-width="2.5"/>
-    <circle cx="880" cy="190" r="52" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.4">
-      <animate attributeName="r" values="48;60;48" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <text x="880" y="197" font-family="'Courier New',monospace" font-size="22" font-weight="bold" fill="#58a6ff" text-anchor="middle">AGENT</text>
+    <!-- mono overline -->
+    <text x="78" y="86" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="15" letter-spacing="2" fill="#7dd3fc" opacity="0.85">~/tmxjtmxj</text>
 
-    <!-- 环绕节点 -->
-    <g fill="#bc8cff">
-      <circle cx="720" cy="120" r="10"/>
-      <circle cx="1020" cy="100" r="10"/>
-      <circle cx="1060" cy="250" r="10"/>
-      <circle cx="740" cy="280" r="10"/>
-      <circle cx="1000" cy="320" r="8"/>
-      <circle cx="650" cy="200" r="8"/>
-    </g>
-    <!-- 连线 -->
-    <g stroke="#30363d" stroke-width="1.5">
-      <line x1="834" y1="170" x2="730" y2="125"/>
-      <line x1="926" y1="170" x2="1010" y2="105"/>
-      <line x1="926" y1="210" x2="1050" y2="245"/>
-      <line x1="834" y1="210" x2="745" y2="275"/>
-      <line x1="880" y1="236" x2="995" y2="315"/>
-      <line x1="880" y1="236" x2="658" y2="205"/>
-    </g>
-    <!-- 连线脉冲 -->
-    <circle r="3" fill="#58a6ff">
-      <animateMotion dur="2.5s" repeatCount="indefinite" path="M880,190 L730,125"/>
-    </circle>
-    <circle r="3" fill="#bc8cff">
-      <animateMotion dur="3.2s" repeatCount="indefinite" path="M880,190 L1050,245"/>
-    </circle>
+    <!-- TMXJ title + blinking cursor -->
+    <text x="74" y="168" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="104" font-weight="800" letter-spacing="2" fill="url(#title)">TMXJ</text>
+    <rect x="458" y="96" width="6" height="62" rx="2" fill="#f0abfc" opacity="0.95">
+      <animate attributeName="opacity" values="1;0.15;1" dur="1.05s" repeatCount="indefinite"/>
+    </rect>
 
-    <!-- 悬浮标签 -->
-    <g font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" fill="#8b949e">
-      <text x="720" y="105">MCP</text>
-      <text x="1040" y="92">ROS2</text>
-      <text x="1070" y="272">Gazebo</text>
-      <text x="720" y="305">Safety</text>
+    <!-- CJK name + role -->
+    <text x="78" y="224" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif" font-size="34" font-weight="600" fill="#e6edf3">天漠雪佳 · <tspan fill="#a78bfa">AI Agent 工程师</tspan></text>
+
+    <!-- English mono tagline -->
+    <text x="78" y="256" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="15" letter-spacing="0.5" fill="#8b98ac">// AI Agent × 智能制造 × 具身智能</text>
+
+    <!-- thin divider -->
+    <rect x="78" y="280" width="540" height="1.5" fill="#1b2740"/>
+    <rect x="78" y="280" width="120" height="1.5" fill="url(#line)">
+      <animate attributeName="width" values="40;150;40" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- terminal line -->
+    <g font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="15">
+      <text x="78" y="330" fill="#3fb950">$</text>
+      <text x="96" y="330" fill="#9fb0c8">agent build</text>
+      <text x="196" y="330" fill="#7dd3fc">--target</text>
+      <text x="278" y="330" fill="#e6edf3">smart-factory</text>
+      <text x="416" y="330" fill="#3fb950">✓</text>
+      <text x="440" y="330" fill="#9fb0c8">compiled</text>
+      <text x="532" y="330" fill="#9fb0c8">· 322 tests passed</text>
+    </g>
+
+    <!-- stat chips -->
+    <g font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#b6c2d6">
+      <rect x="78" y="354" width="108" height="28" rx="14" fill="#111a30" stroke="#233152" stroke-width="1"/>
+      <text x="132" y="373" text-anchor="middle">17 仓库</text>
+      <rect x="194" y="354" width="142" height="28" rx="14" fill="#111a30" stroke="#233152" stroke-width="1"/>
+      <text x="265" y="373" text-anchor="middle">15+ Agent 系统</text>
+      <rect x="344" y="354" width="150" height="28" rx="14" fill="#111a30" stroke="#233152" stroke-width="1"/>
+      <text x="419" y="373" text-anchor="middle">MCP × ROS2</text>
     </g>
   </g>
 
-  <!-- 标题区 -->
-  <text x="80" y="165" font-family="'Courier New',monospace" font-size="96" font-weight="bold" fill="url(#title)">TMXJ</text>
-  <rect x="448" y="105" width="5" height="74" fill="#58a6ff" opacity="0.9">
-    <animate attributeName="opacity" values="0.9;0.1;0.9" dur="1.1s" repeatCount="indefinite"/>
-  </rect>
-  <text x="82" y="225" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="30" fill="#e6edf3">天漠雪佳 · 用 AI Agent 造东西的工程师</text>
-  <text x="82" y="265" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="17" fill="#8b949e">AI Agent × 智能制造 × 具身智能 — 从山东荣成的一台电脑开始</text>
+  <!-- ================= AGENT CONSTELLATION ================= -->
+  <!-- center -->
+  <g>
+    <circle cx="920" cy="188" r="118" fill="none" stroke="#60a5fa" stroke-width="1" opacity="0.12"/>
+    <!-- animated pulsing ring -->
+    <circle cx="920" cy="188" r="60" fill="none" stroke="url(#ring)" stroke-width="2" opacity="0.9">
+      <animate attributeName="r" values="58;70;58" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.85;0.25;0.85" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <!-- inner node -->
+    <circle cx="920" cy="188" r="44" fill="#0b1226" stroke="url(#ring)" stroke-width="2"/>
+    <circle cx="920" cy="188" r="44" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.35">
+      <animate attributeName="r" values="44;52;44" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="920" y="195" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="17" font-weight="700" letter-spacing="1" fill="#7dd3fc" text-anchor="middle">AGENT</text>
 
-  <!-- 底部代码行装饰 -->
-  <g font-family="'Courier New',monospace" font-size="14" fill="#3fb950" opacity="0.85">
-    <text x="80" y="330">$</text>
-    <text x="102" y="330" fill="#8b949e">agent build</text>
-    <text x="200" y="330" fill="#58a6ff">--target</text>
-    <text x="292" y="330" fill="#e6edf3">smart-factory</text>
-    <text x="440" y="330" fill="#3fb950">✓</text>
-    <text x="470" y="330" fill="#8b949e">compiled</text>
-    <text x="566" y="330" fill="#8b949e">322 tests passed</text>
+    <!-- rotating dashed orbit -->
+    <circle cx="920" cy="188" r="86" fill="none" stroke="#60a5fa" stroke-width="1" stroke-dasharray="3 9" opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="0 920 188" to="360 920 188" dur="16s" repeatCount="indefinite"/>
+    </circle>
   </g>
-  <rect x="80" y="345" width="700" height="1.5" fill="#21262d"/>
-  <rect x="80" y="348" width="180" height="2" fill="#58a6ff" opacity="0.6">
-    <animate attributeName="width" values="60;180;60" dur="4s" repeatCount="indefinite"/>
-  </rect>
+
+  <!-- satellites + connections -->
+  <g>
+    <g stroke="#33456b" stroke-width="1.4">
+      <line x1="884" y1="160" x2="770" y2="92"/>
+      <line x1="956" y1="160" x2="1078" y2="92"/>
+      <line x1="962" y1="196" x2="1128" y2="236"/>
+      <line x1="956" y1="214" x2="1044" y2="316"/>
+      <line x1="884" y1="214" x2="790" y2="312"/>
+      <line x1="877" y1="200" x2="722" y2="238"/>
+    </g>
+
+    <!-- moving data pulses -->
+    <circle r="4" fill="#22d3ee">
+      <animateMotion dur="2.2s" repeatCount="indefinite" path="M884,160 L770,92"/>
+    </circle>
+    <circle r="4" fill="#a855f7">
+      <animateMotion dur="2.6s" repeatCount="indefinite" path="M962,196 L1128,236"/>
+    </circle>
+    <circle r="3.5" fill="#60a5fa">
+      <animateMotion dur="3s" repeatCount="indefinite" path="M884,214 L790,312"/>
+    </circle>
+    <circle r="3.5" fill="#f0abfc">
+      <animateMotion dur="2.8s" repeatCount="indefinite" path="M956,214 L1044,316"/>
+    </circle>
+
+    <!-- satellite nodes -->
+    <g fill="#0b1226" stroke="#22d3ee" stroke-width="1.6">
+      <circle cx="770" cy="92" r="8"/>
+      <circle cx="1078" cy="92" r="8"/>
+    </g>
+    <g fill="#0b1226" stroke="#a855f7" stroke-width="1.6">
+      <circle cx="1128" cy="236" r="8"/>
+      <circle cx="790" cy="312" r="8"/>
+    </g>
+    <g fill="#0b1226" stroke="#60a5fa" stroke-width="1.6">
+      <circle cx="1044" cy="316" r="8"/>
+      <circle cx="722" cy="238" r="8"/>
+    </g>
+
+    <!-- labels -->
+    <g font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="12" fill="#8b98ac">
+      <text x="752" y="78" text-anchor="end">MCP</text>
+      <text x="1096" y="78">ROS2</text>
+      <text x="1145" y="232">Gazebo</text>
+      <text x="1000" y="352">Vision</text>
+      <text x="806" y="352">Memory</text>
+      <text x="700" y="246" text-anchor="end">Skills</text>
+    </g>
+  </g>
+
+  <!-- bottom-right mono note -->
+  <text x="1180" y="404" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="12" fill="#5b6b85" text-anchor="end">spec ./intelligent-systems</text>
 </svg>
