@@ -37,7 +37,7 @@
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=TmxjTmxj&theme=tokyonight&hide_border=false&background=0D1117" width="76%" alt="提交热力图"/>
+  <img src="assets/contrib-heatmap.svg" width="78%" alt="最近 26 周提交热力图"/>
 </div>
 
 ---
