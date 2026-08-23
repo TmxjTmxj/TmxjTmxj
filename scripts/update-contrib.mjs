@@ -7,7 +7,8 @@ const USER = process.env.GITHUB_REPOSITORY?.split('/')[0] || 'TmxjTmxj';
 const repo = new URL('../', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1').replace(/\/$/, '');
 const OUT = `${repo}/assets/contrib-heatmap.svg`;
 
-const TOKEN = process.env.GH_PAT || process.env.GITHUB_TOKEN || '';
+// Uses only the free, auto-issued GITHUB_TOKEN. Never uses a personal token.
+const TOKEN = process.env.GITHUB_TOKEN || '';
 const query = `query($u:String!){user(login:$u){contributionsCollection{contributionCalendar{totalContributions weeks{contributionDays{date contributionCount}}}}}}`;
 
 async function fetchCalendar() {
