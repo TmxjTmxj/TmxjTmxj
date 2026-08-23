@@ -1,0 +1,49 @@
+name: Update contribution heatmap
+
+# Regenerates assets/contrib-heatmap.svg from the real GitHub contribution
+# calendar on a schedule and on every push, so the profile stays current
+# without anyone re-running anything.
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'scripts/update-contrib.mjs'
+      - '.github/workflows/update-contrib.yml'
+  schedule:
+    - cron: '0 0 * * *'   # every day at 00:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-heatmap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Regenerate contribution heatmap
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: a PAT with read:user scope, so the contribution calendar
+          # can always be read even if the repo-scoped GITHUB_TOKEN cannot.
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: node scripts/update-contrib.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- assets/contrib-heatmap.svg; then
+            echo "No change to heatmap"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/contrib-heatmap.svg
+          git commit -m "chore: update contribution heatmap"
+          git push
