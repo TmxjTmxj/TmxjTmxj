@@ -50,25 +50,25 @@
 
   <!-- stat tiles -->
   <g>
-    <!-- 322 tests -->
+    <!-- 505 unique tests -->
     <rect x="46" y="122" width="188" height="82" rx="12" fill="url(#tile)" stroke="#24345a" stroke-width="1"/>
-    <text x="140" y="164" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="30" font-weight="700" fill="#3fb950" text-anchor="middle">322</text>
-    <text x="140" y="190" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#8b98ac" text-anchor="middle">tests passed</text>
+    <text x="140" y="164" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="30" font-weight="700" fill="#3fb950" text-anchor="middle">505</text>
+    <text x="140" y="190" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#8b98ac" text-anchor="middle">唯一测试</text>
 
-    <!-- 49.6s -->
+    <!-- 137.8s -->
     <rect x="250" y="122" width="188" height="82" rx="12" fill="url(#tile)" stroke="#24345a" stroke-width="1"/>
-    <text x="344" y="164" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="30" font-weight="700" fill="#7dd3fc" text-anchor="middle">49.6s</text>
-    <text x="344" y="190" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#8b98ac" text-anchor="middle">三段配送实跑</text>
+    <text x="344" y="164" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="30" font-weight="700" fill="#7dd3fc" text-anchor="middle">137.8s</text>
+    <text x="344" y="190" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#8b98ac" text-anchor="middle">ROS 仿真耗时</text>
 
-    <!-- <=0.35m -->
+    <!-- <=0.50m -->
     <rect x="454" y="122" width="188" height="82" rx="12" fill="url(#tile)" stroke="#24345a" stroke-width="1"/>
-    <text x="548" y="164" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="30" font-weight="700" fill="#a78bfa" text-anchor="middle">≤0.35m</text>
+    <text x="548" y="164" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="30" font-weight="700" fill="#a78bfa" text-anchor="middle">≤0.50m</text>
     <text x="548" y="190" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#8b98ac" text-anchor="middle">端点误差</text>
 
     <!-- 0 -->
     <rect x="658" y="122" width="188" height="82" rx="12" fill="url(#tile)" stroke="#24345a" stroke-width="1"/>
     <text x="752" y="164" font-family="'JetBrains Mono','SFMono-Regular',Consolas,Menlo,monospace" font-size="30" font-weight="700" fill="#3fb950" text-anchor="middle">0</text>
-    <text x="752" y="190" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#8b98ac" text-anchor="middle">碰撞 · 证据防伪造</text>
+    <text x="752" y="190" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#8b98ac" text-anchor="middle">禁止接触 · 防伪造</text>
   </g>
 
   <!-- language bar -->
