@@ -78,8 +78,6 @@
 
 | 项目 | 一句话 |
 | :--- | :--- |
-| [hermes-core](https://github.com/TmxjTmxj/hermes-core) | Agent 意识引擎 + 四层记忆 + 跨 Agent 记忆桥 |
-| [lobster-core](https://github.com/TmxjTmxj/lobster-core) | Agent 技能工厂 + 学习循环 + 技能编排注册 |
 | [tmxj-agent](https://github.com/TmxjTmxj/tmxj-agent) | Rust 编码 Agent，日常主力工具 |
 | [hermes-obsidian-vault](https://github.com/TmxjTmxj/hermes-obsidian-vault) | 基于 Obsidian 的三层知识管道 |
 | [pi-agent-omnipotent](https://github.com/TmxjTmxj/pi-agent-omnipotent) | TypeScript 通用 Agent，多场景调度 |
@@ -114,7 +112,7 @@
 ## 🧭 正在做的方向
 
 - [ ] **Agent 控制 ROS2 机器人** —— MCP + Gazebo 仿真，让 Agent 真的进车间
-- [ ] **Agent 内核** —— 分层记忆 / 意识引擎（Hermes / Lobster）
+- [ ] **Agent 内核** —— 分层记忆 / 意识引擎（私有项目）
 - [ ] **智能工业落地** —— CAD / CAE / CAM 自动化
 
 ---
